@@ -12,7 +12,7 @@ public class Main {
         plantsWithTomatosAndCucumbers[0]=Plants.Tomatoes;
         plantsWithTomatosAndCucumbers[1]=Plants.Cucumber;
         Garden gardenTomCuc = new Garden(plantsWithTomatosAndCucumbers);
-
+sosi huy
         //niznayka.stop();
         klops.act("самолично бросился догонять", niznayka);
         milordic.act("Отойти от", strawberryGarden);
