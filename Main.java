@@ -16,7 +16,7 @@ public class Main {
         //niznayka.stop();
         klops.act("самолично бросился догонять", niznayka);
         milordic.act("Отойти от", strawberryGarden);
-milordic.act("подойти к "+gardenTomCuc);
+        milordic.act("подойти к "+gardenTomCuc);
     }
 
 
