@@ -1,30 +1,12 @@
 public class Korotyshka extends Human implements Action, ActionWithSubject {
-
+    private boolean legCatched;
     private String name;
 
     public Korotyshka(String name) {
         this.name = name;
+        legCatched = false;
     }
 
-    //    public String getName() {
-//        return this.name;
-//    }
-
-//    @Override
-//    public void setName(String name) {
-//        this.name = name;
-//    }
-
-    @Override
-    public void stop() {
-        System.out.println("Korotyshka stops!");
-    }
-
-    @Override
-    public void catchUp(Korotyshka K) {
-
-        System.out.println(this.name + "Catching Up" + name);
-    }
 
     @Override
     public void act(String action) {
@@ -40,6 +22,21 @@ public class Korotyshka extends Human implements Action, ActionWithSubject {
     @Override
     public void act(String action, Object object) {
 
-        System.out.println(name + ": " + action + " " + object);
+        System.out.println(name + " " + action + " " + object);
+    }
+
+    @Override
+    public boolean isLegCatched() {
+        return legCatched;
+    }
+
+    @Override
+    public void catchLeg() {
+
+    }
+
+    @Override
+    public void releaseLeg() {
+
     }
 }
