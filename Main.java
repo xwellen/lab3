@@ -14,6 +14,11 @@ public class Main {
         plantsWithTomatosAndCucumbers[0] = Plants.Tomatoes;
         plantsWithTomatosAndCucumbers[1] = Plants.Cucumber;
         Garden gardenTomatosAndCucumber = new Garden(plantsWithTomatosAndCucumbers);
+        
+        Korotyshka[] korotyshkas = {klops,niznayka,milordic,cezarino,fix,fex};
+        for (int i = 0; i < korotyshkas.length; i++) {
+            korotyshkas[i].act(" остановился.");
+        }
                                                                                                                     //Коротышки остановились.
         klops.act("самолично бросился догонять", niznayka + ".");                                    //Клопс самолично бросился догонять Незнайку
                                                                                                                       //Незнайку и попал ногою в капкан.
