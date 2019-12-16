@@ -13,12 +13,21 @@ public class Main {
         Plants[] plantsWithTomatosAndCucumbers = new Plants[2];
         plantsWithTomatosAndCucumbers[0] = Plants.Tomatoes;
         plantsWithTomatosAndCucumbers[1] = Plants.Cucumber;
-        Garden gardenTomCuc = new Garden(plantsWithTomatosAndCucumbers);
-        klops.act("самолично бросился догонять", niznayka + ".");
-        milordic.act("Отойти от", strawberryGarden + ".");
-        milordic.act("подойти к " + gardenTomCuc + ".");
-        fix.act("подбежал к", niznayka + ".");
-        fex.act("подбежал к", niznayka + ".");
+        Garden gardenTomatosAndCucumber = new Garden(plantsWithTomatosAndCucumbers);
+                                                                                                                    //Коротышки остановились.
+        klops.act("самолично бросился догонять", niznayka + ".");                                    //Клопс самолично бросился догонять Незнайку
+                                                                                                                      //Незнайку и попал ногою в капкан.
+        fix.act("подбежал к", niznayka + ".");                                                          //Фикс и
+        fex.act("подбежал к", niznayka + ".");                                                         //Фекс подбежали к нему
+                                                                                                                     //и принялись освобождать его ногу из капкана. (Фикс)
+                                                                                                                    //и принялись освобождать его ногу из капкана. (Фекс)
+        Korotyshka[] gardenWorkeres = {niznayka,milordic,cezarino};                                                       //В это время Незнайка, Милордик
+        for (int i = 0; i < gardenWorkeres.length; i++) {                                                                      //и Цезарино перенесли
+            gardenWorkeres[i].act("перенёс поле своей деятельности на грядки c " + gardenTomatosAndCucumber + ".");     //перенесли поле своей деятельности с клубники
+            gardenWorkeres[i].act("перенёс поле своей деятельности с ", strawberryGarden + ".");               //на грядки с огурцами
+        }                                                                                                                   //и помидорами.
+        niznayka.act("и уже трудно было разобрать");                                                             //В одну минуту там все было перепутано, и уже трудно было разобрать, где росли огурцы и где помидоры.
+
     }
 
 
